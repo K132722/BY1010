@@ -21,10 +21,10 @@ app.use(cors({
 app.use(express.json({ limit: '50mb' }));
 
 // ============================================================
-// إعدادات بوت التلجرام
+// إعدادات بوت التلجرام (مدمجة مباشرة)
 // ============================================================
-const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '8313488960:AAHejLd90K3ADVKT_bWJtblAzcIwGBlPvbQ';
-const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || '-1003974721866';
+const TELEGRAM_BOT_TOKEN = '8313488960:AAHejLd90K3ADVKT_bWJtblAzcIwGBlPvbQ';
+const TELEGRAM_CHAT_ID = '-1003974721866';
 const TELEGRAM_API = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}`;
 
 // ============================================================
