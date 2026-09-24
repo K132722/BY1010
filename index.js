@@ -1,7 +1,7 @@
 const express = require('express');
 const multer = require('multer');
 const FormData = require('form-data');
-const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+const fetch = require('node-fetch');
 const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
